@@ -14,38 +14,38 @@
 </head>
 
 <body>
-  <main class=" container-fluid" >
-    
+  <main class="container-fluid" >
     <div class='row'>
-      <div class='col-3 h-100 border' id='vc'>
+      <div class='col-3' id='vc'>
         <!-- Vung C -->
         <?php include('./template/21880005_vungC.php'); ?>
       </div>
       <div class='col'>
         <!-- Vung B -->
-        
-        <div class="float-end" id='vb'>
-          <?php echo '<img src="images/chandung.png" alt="21880005" width=20%>';?>
-          123
-          <!-- <img src="images/chandung.png" alt="21880005" width=20% class=' float-end p-1 m-auto'> -->
-        </div>
         <!-- Vung A -->
-        <h1 class='align-content-start'>Bài Tập 2</h1>
-          <?php echo "Date: " .date("l")." " .date("d/M/Y"). "<br> Time:" . date("h:i:s a")?>;
-          <ol list-style>
-            <li>MSSV: 21880005</li>
-            <li>Họ Tên: Phạm Tuấn Anh</li>
-            <li>Email:<a href="mailto:tuananhdc08kt@gmail.com">tuananhdc08kt@gmail.com</a></li>
-            <li>Số điện thoại:<a href="tel:+84978835947">(0978) 835-947</a></li>
-          </ol>
-          <div>Bài tập 1: Cài đặt Warmp server <br>
-        Bài tập 2: Tạo server online</div>
+        <dir>
+          <h1 class='align-content-start'>Bài Tập 2</h1>
+            <?php echo "Date: " .date("l")." " .date("d/M/Y"). "<br> Time:" . date("h:i:s a")?>;
+            <ol list-style>
+              <li>MSSV: 21880005</li>
+              <li>Họ Tên: Phạm Tuấn Anh</li>
+              <li>Email:<a href="mailto:tuananhdc08kt@gmail.com">tuananhdc08kt@gmail.com</a></li>
+              <li>Số điện thoại:<a href="tel:+84978835947">(0978) 835-947</a></li>
+            </ol>
+            <div>Bài tập 1: Cài đặt Warmp server <br>
+          Bài tập 2: Tạo server online</div>
+        </dir>
+
+        <div class="float-end" id='vb'>
+          <!-- <?php echo '<img src="images/chandung.png" alt="21880005" width=20%>';?> -->
+          <img src="images/chandung.png" alt="21880005" width=20% class=' float-end'>
+        </div>
           
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
           Vung D
-        <div id="footer">
+        <footer id="footer" class=" text-center w-75">
           <?php include('./template/21880005_vungD.php')?>
-        </div>
+        </footer>
       </div>
       
     </div>
