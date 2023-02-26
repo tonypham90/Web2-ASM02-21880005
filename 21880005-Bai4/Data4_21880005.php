@@ -1,6 +1,7 @@
 <?php
-$dsSV=(
-    [
+
+$dsSV=array(
+
         ['2207728','Hoàng Thị Thanh Hương',9.5,'../images/2207728.png'],
         ['2207744','Đỗ Thị Bích Ngọc',5.7,'../images/2207744.png'],
         ['2207799','Mai Đinh Ngọc Thủy',7.4,'../images/2207799.png'],
@@ -21,4 +22,8 @@ $dsSV=(
         ['2210688','Ngô Tuấn Anh',4.6,'../images/2210688.png'],
         ['2210624','Nguyễn Hoàng Phi Vũ',9.1,'../images/2210624.png'],
         ['2212158','Nguyễn Tấn Viện',5.4,'../images/2212158.png']
-    ]);
+    );
+
+//printData($dsSV);
+
+

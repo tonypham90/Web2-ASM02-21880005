@@ -46,7 +46,7 @@ section::after {
 }
 
 /* Style the footer */
-#footer{
+#vd{
   background-color: coral;
   clear: both;
   color: whitesmoke;
@@ -68,7 +68,6 @@ section::after {
 
 #vb {
   float: right;
-  display:;
   margin: 2px;
   /* border: 1px solid black; */
   padding: 2px;

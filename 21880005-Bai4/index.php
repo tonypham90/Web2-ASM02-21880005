@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <?php
+
 // use dirname to get the directory of the current file
 $path = dirname(__FILE__);
 // $path here is now /path_to/your_dir
@@ -52,18 +53,18 @@ else{
             <?php include('../template/21880005_vungB.php');?>
         </div>
         <!-- Vung A -->
-        <h1 class='align-content-lg-start'><?php printf("Bài:%s",$pagename) ?></h1>
-        <div> 
-            <?php
-            require_once "Transaction_21880005.php";
-            showdata();
-            ?>
-        </div>
+
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
-          Vung D
+          <?php
+            include "Data4_21880005.php";
+            include "lib_21880005.php";
+            if (!empty($dsSV)) {
+              printData($dsSV);
+            }
+          ?>
         
       </div>
-      <footer id="footer" class=" text-center w-100">
+      <footer id="vd" class=" text-center w-100">
           <?php include('../template/21880005_vungD.php')?>
         </footer>
     </div>

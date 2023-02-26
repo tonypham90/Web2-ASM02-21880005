@@ -61,7 +61,7 @@ else{
           Vung D
         
       </div>
-      <footer id="footer" class=" text-center w-100">
+      <footer id="vd" class=" text-center w-100">
           <?php include('../template/21880005_vungD.php')?>
         </footer>
     </div>

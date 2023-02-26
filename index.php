@@ -47,19 +47,17 @@ if ($lenfolder == $lencutoff) {
             <!-- Vung B -->
 
             <div class=" float-end" id='vb'>
-                <!-- <?php echo '<img src="images/chandung.png" alt="21880005" width=20%>'; ?> -->
+                <!-- <?php echo '<img src="images/chandung.png" alt="21880005" width=2506>'; ?> -->
 
                 <img src="images/chandung.png" alt="21880005">
             </div>
             <!-- Vung A -->
             <h1 class='align-content-start'>Bài Tập 2</h1>
             <?php echo "Date: " . date("l") . " " . date("d/M/Y") . "<br> Time:" . date("h:i:s a") ?>;
-            <ol list-style>
-                <li>MSSV: 21880005</li>
-                <li>Họ Tên: Phạm Tuấn Anh</li>
-                <li>Email:<a href="mailto:tuananhdc08kt@gmail.com">tuananhdc08kt@gmail.com</a></li>
-                <li>Số điện thoại:<a href="tel:+84978835947">(0978) 835-947</a></li>
-            </ol>
+            <li>MSSV: 21880005</li>
+            <li>Họ Tên: Phạm Tuấn Anh</li>
+            <li>Email:<a href="mailto:tuananhdc08kt@gmail.com">tuananhdc08kt@gmail.com</a></li>
+            <li>Số điện thoại:<a href="tel:+84978835947">(0978) 835-947</a></li>
             <div>Bài tập 1: Cài đặt Warmp server <br>
                 Bài tập 2: Tạo server online
             </div>
@@ -68,7 +66,7 @@ if ($lenfolder == $lencutoff) {
             Vung D
 
         </div>
-        <footer id="footer" class=" text-center w-100">
+        <footer id="vd">
             <?php include('./template/21880005_vungD.php') ?>
         </footer>
 
