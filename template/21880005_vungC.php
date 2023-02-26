@@ -5,8 +5,8 @@ if (is_dir('./template')) {
   $urlHome="./";
 }
 else{
-  $urlHeadPath="./";
-  $urlHome = './';
+  $urlHeadPath="../";
+  $urlHome = '../';
 }
 echo "<h2 class='text-primary-emphasis text-center'>Mục lục</h2>";
 $listpage = array(range(1,13));

@@ -24,17 +24,7 @@ body {
 } */
 
 /* Create two columns/boxes that floats next to each other */
-#vc {
-  float: left;
-  font-size: large;
-  position: fixed;
-  width: 200px;
-  height: 100%; 
-  /* only for demonstration, should be removed */
-  background-color: #d23737;
-  padding: 2px;
-  overflow: auto;
-}
+
 
 /* main {
   margin-left: 200px;
@@ -57,44 +47,79 @@ section::after {
 
 /* Style the footer */
 #footer{
-  
-  /* clear: both; */
+  background-color: coral;
+  clear: both;
+  color: whitesmoke;
+  opacity: 50%;
   text-align: center;
   /* position: relative; */
-  height: 200px;
-  margin-top: -200px;
+  height: auto;
+  padding: 2rem;
+
+  
+
+  /* margin-top: -200px; */
+}
+
+#va{
+  /* float: right; */
+  min-height: 90vh;
 }
 
 #vb {
   float: right;
-  /* margin: 2px; */
-  border: 1px solid black;
-  /* padding: 2px; */
-  /* size-adjust: 2rem; */
+  display:;
+  margin: 2px;
+  /* border: 1px solid black; */
+  padding: 2px;
+  size-adjust: 2rem;
+  width: 7rem;
+  height:7rem;
   background-color: lightblue;
+  border-radius: 5px;
+  align-items: center;
+  
 }
 #vb img{
-  size: 20vh;
+  width: 7rem;
+  border-radius: 5px;
+
+  
+
 }
-ul{
+
+#vc {
+  /* float: left; */
+  font-size: large;
+  /* position: fixed; */
+  width: 20%;
+  height: 90vh; 
+  /* only for demonstration, should be removed */
+  background-color: #d23737;
+  color: white;
+  padding: 2px;
+  overflow: auto;
+}
+#vc ul{
   list-style: none;
 }
-ul li a {
+#vc ul li a {
   display: block;
-  color: black;
+  color: white;
   padding:  8px 2px;
   text-decoration: none;
   width: 100%;
   margin-left: auto;
 }
 
-ul li a.active {
-  background-color: #8347d1;
+#vc ul li a.active {
+  background-color:coral;
+  font-weight: bold;
   color: white;
 }
 
 
-li a:hover:not(.active) {
+#vc li a:hover:not(.active) {
   background-color: #04AA6D;
   color: white;
 }

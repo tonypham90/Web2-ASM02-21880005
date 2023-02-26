@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <?php
-
 // use dirname to get the directory of the current file
 $path = dirname(__FILE__);
 // $path here is now /path_to/your_dir
@@ -25,9 +24,9 @@ else{
  ?>
 
 <head>
-  <title>
-    <?php printf("Bài Tập: %u",$pagename) ?>
-  </title>
+    <title>
+        <?php printf("Bài Tập: %u",$pagename) ?>
+    </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,21 +38,37 @@ else{
 </head>
 
 <body>
-  <!-- Vung C -->
-  <div class='vc'>
-      <?php include('../template/21880005_vungC.php'); ?>
-  </div>
-
-  <main>
-    <H1 class='align-content-lg-start'><?php printf("Bài:%s",$pagename) ?></H1>
-    <div>tạo server online</div>
-    <div class='vb'>
-      <?php include('../template/21880005_vungB.php');?>
+  <main class="container-fluid" >
+    
+    <div class='row'>
+      <div class='col-3 h-200' id='vc'>
+        <!-- Vung C -->
+        <?php include('../template/21880005_vungC.php'); ?>
+      </div>
+      <div class='col-9' id='va'>
+        <!-- Vung B -->
+        
+        <div class=" float-end" id='vb'>
+            <?php include('../template/21880005_vungB.php');?>
+        </div>
+        <!-- Vung A -->
+        <h1 class='align-content-lg-start'><?php printf("Bài:%s",$pagename) ?></h1>
+        <div> 
+            <?php
+            require_once "Transaction_21880005.php";
+            showdata();
+            ?>
+        </div>
+          <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
+          Vung D
+        
+      </div>
+      <footer id="footer" class=" text-center w-100">
+          <?php include('../template/21880005_vungD.php')?>
+        </footer>
     </div>
   </main>
-  <footer>
-   <?php include('../template/21880005_vungD.php')?>
-  </footer>
+  
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
