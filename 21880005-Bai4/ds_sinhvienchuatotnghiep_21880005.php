@@ -58,19 +58,12 @@ else{
           <a href="ds_sinhvienchuatotnghiep_21880005.php" class="btn btn-secondary">Danh Sách Sinh Viên Chưa Tốt Nghiệp</a>
 
 
-
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
           <?php
             include "Data4_21880005.php";
             include "lib_21880005.php";
-
             if (!empty($dsSV)) {
-
-                echo "<h1>Danh Sách Sinh Viên</h1>";
-
-                echo "<h1>".countElement($dsSV)."</h1>";
-
-                printData($dsSV);
+                ds_svChuaTN($dsSV);
             }
           ?>
       </div>
