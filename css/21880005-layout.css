@@ -49,12 +49,14 @@ section::after {
 #vd{
   background-color: coral;
   clear: both;
-  color: whitesmoke;
-  opacity: 50%;
+  color:black;
+  /* opacity: 50%; */
   text-align: center;
   /* position: relative; */
-  height: auto;
+  height: 10vh;
+  width: 200%;
   padding: 2rem;
+  animation-fill-mode:both;
 
   
 
@@ -63,7 +65,8 @@ section::after {
 
 #va{
   /* float: right; */
-  min-height: 90vh;
+  height: 90vh;
+  overflow: auto;
 }
 
 #vb {
@@ -111,7 +114,7 @@ section::after {
   margin-left: auto;
 }
 
-#vc ul li a.active {
+#vc a.active {
   background-color:coral;
   font-weight: bold;
   color: white;
@@ -119,8 +122,46 @@ section::after {
 
 
 #vc li a:hover:not(.active) {
-  background-color:coral;
+  background-color: #04AA6D;
   color: white;
+}
+
+#ds {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ds td, #ds th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width:auto;
+}
+
+#ds tr:nth-child(even){background-color: #f2f2f2;}
+
+#ds tr:hover {background-color: #04AA6D; color: white;}
+
+#va a{
+  margin: 1rem;
+}
+#ds th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #419677;
+  color: white;
+}
+
+#ds img{
+  height: 7rem;
+  width: 7rem;
+  align-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#ds table{
+  border-radius: 5px;
 }
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {

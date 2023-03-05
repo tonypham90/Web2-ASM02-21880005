@@ -23,9 +23,27 @@ include "Data4_21880005.php";
 
 function printData($DS){
     $noElement = count($DS);
+    echo '<div">
+    <table id="ds" class="rounded-end-1">
+       
+            <tr>
+                <th scope="col">MSSV </th>
+                <th scope="col">Họ và tên</th>
+                <th scope="col">Điểm Trung Bình</th>
+                <th scope="col">Hình</th>
+            </tr>';
     for ($i=0; $i < $noElement; $i++) {
-              echo  "<li>MSSV:" . $DS[$i][0] . "; Ten: " . $DS[$i][1] . "; GPA: " . (float)$DS[$i][2] . ".</li>";
-            }
+            //   echo  "<li>MSSV:" . $DS[$i][0] . "; Ten: " . $DS[$i][1] . "; GPA: " . (float)$DS[$i][2] . ".</li>";
+              echo '<tr>
+                        <td scope="row">'.$DS[$i][0].'</td>
+                        <td>'.$DS[$i][1].'</td>
+                        <td>'.(float)$DS[$i][2].'</td>
+                        <td><img src="./img/'.$DS[$i][0].'.png" alt="'.$DS[$i][0].'"></td>
+                    </tr>';
+            }echo'
+                </table>
+            </div>';
+            
 }
 
 //
@@ -43,13 +61,13 @@ function ds_svChuaTN($DS){
             $dssv[] = $sv;
         }
     }
-    echo "<h1>Danh Sách Sinh Viên chưa tốt nghiệp</h1>";
+    echo "<h1 class='text-center text-uppercase'>Danh Sách Sinh Viên chưa tốt nghiệp</h1>";
     if (!empty($dssv)) {
         countElement($dssv);
         printData($dssv);
     }
     else{
-        echo "không có sinh viên chưa tốt nghiệp";
+        echo "<h1 class='text-bg-warning'>không có sinh viên chưa tốt nghiệp</h1>";
     }
 }
 
@@ -61,14 +79,14 @@ function ds_svTN($DS){
             array_push($dssv,$DS[$i]);
         }
     }
-    echo "<h1>Danh Sách Sinh Viên tốt nghiệp</h1>";
+    echo "<h1 class='text-center text-uppercase'>Danh Sách Sinh Viên tốt nghiệp</h1>";
     if (!empty($dssv)) {
         countElement($dssv);
 
         printData($dssv);
     }
     else{
-        echo "không có sinh viên tốt nghiệp";
+        echo "<h1 class='text-bg-warning'>không có sinh viên tốt nghiệp</h1>";
     }
 }
 //function showData($DS): void
