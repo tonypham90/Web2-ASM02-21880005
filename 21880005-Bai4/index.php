@@ -73,10 +73,11 @@ else{
                 printData($dsSV);
             }
           ?>
+          <footer id="vd" class=" text-center">
+              <?php include('../template/21880005_vungD.php')?>
+          </footer>
       </div>
-      <footer id="vd" class=" text-center w-100">
-          <?php include('../template/21880005_vungD.php')?>
-      </footer>
+
     </div>
   </main>
   
