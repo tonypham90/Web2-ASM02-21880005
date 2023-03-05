@@ -38,7 +38,7 @@ function printData($DS){
                         <td scope="row">'.$DS[$i][0].'</td>
                         <td>'.$DS[$i][1].'</td>
                         <td>'.(float)$DS[$i][2].'</td>
-                        <td><img src="./img/'.$DS[$i][0].'.png" alt="'.$DS[$i][0].'"></td>
+                        <td><img src="/images/lop'.$DS[$i][0].'" alt="'.$DS[$i][0].'"></td>
                     </tr>';
             }echo'
                 </table>
