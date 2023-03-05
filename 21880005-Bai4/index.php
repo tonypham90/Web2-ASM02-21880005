@@ -61,16 +61,16 @@ else{
 
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
           <?php
-            include "Data4_21880005.php";
-            include "lib_21880005.php";
+            include "../data_21880005.php";
+            include "../lib_21880005.php";
 
-            if (!empty($dsSV)) {
+            if (!empty($arrdsSV)) {
 
                 echo "<h1>Danh Sách Sinh Viên</h1>";
 
-                echo "<h1>".countElement($dsSV)."</h1>";
+                echo "<h1>".countElement($arrdsSV)."</h1>";
 
-                printData($dsSV);
+                printData($arrdsSV);
             }
           ?>
           <footer id="vd" class=" text-center">

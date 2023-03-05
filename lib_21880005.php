@@ -1,5 +1,5 @@
 <?php
-include "Data4_21880005.php";
+include 'Data4_21880005.php';
 //$dsSV = array(
 //    array('2207728','Hoàng Thị Thanh Hương',9.5,'../images/2207728.png'),
 //    array('2207744','Đỗ Thị Bích Ngọc',5.7,'../images/2207744.png')
@@ -30,14 +30,16 @@ function printData($DS){
                 <th scope="col">MSSV </th>
                 <th scope="col">Họ và tên</th>
                 <th scope="col">Điểm Trung Bình</th>
+                <th scope="col">Lớp</th>
                 <th scope="col">Hình</th>
             </tr>';
     for ($i=0; $i < $noElement; $i++) {
             //   echo  "<li>MSSV:" . $DS[$i][0] . "; Ten: " . $DS[$i][1] . "; GPA: " . (float)$DS[$i][2] . ".</li>";
               echo '<tr>
-                        <td scope="row">'.$DS[$i][0].'</td>
+                        <td>'.$DS[$i][0].'</td>
                         <td>'.$DS[$i][1].'</td>
                         <td>'.(float)$DS[$i][2].'</td>
+                        <td>'.$DS[$i][4].'</td>
                         <td><img src="../images/lop/'.$DS[$i][0].'.png" alt="'.$DS[$i][0].'"></td>
                     </tr>';
             }echo'
@@ -45,6 +47,7 @@ function printData($DS){
             </div>';
             
 }
+
 
 //
 function countElement($DS){
@@ -88,6 +91,10 @@ function ds_svTN($DS){
     else{
         echo "<h1 class='text-bg-warning'>không có sinh viên tốt nghiệp</h1>";
     }
+}
+
+function printClassMember($DSLop,$tenlop){
+
 }
 //function showData($DS): void
 //{

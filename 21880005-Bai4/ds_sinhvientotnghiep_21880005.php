@@ -60,10 +60,10 @@ else{
 
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
           <?php
-            include "Data4_21880005.php";
-            include "lib_21880005.php";
-            if (!empty($dsSV)) {
-                ds_svTN($dsSV);
+            include "../data_21880005.php";
+            include "../lib_21880005.php";
+            if (!empty($arrdsSV)) {
+                ds_svTN($arrdsSV);
             }
           ?>
       </div>

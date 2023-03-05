@@ -1,6 +1,6 @@
 <?php
 
-$dsSV=array(
+$dssv=array(
 
         ['2188234','Phạm Tuấn Anh',9.2,'../images/2188234.png'],
         ['2207728','Hoàng Thị Thanh Hương',9.5,'../images/2207728.png'],

@@ -54,11 +54,18 @@ else{
         </div>
         <!-- Vung A -->
         <h1 class='align-content-lg-start'><?php printf("Bài:%s",$pagename) ?></h1>
-        <div> 
-            Setup Warmp
+        <div>
+            <?php
+            include "../data/data_21880005.php";
+            include "../lib_21880005.php";
+            if (!empty($arrdsSV)) {
+                printData($arrdsSV);
+            }
+            ?>
+
+
         </div>
           <!-- <img src="/images/chandung" alt="21880005" width="100%"> -->
-          Vung D
         
       </div>
       <footer id="vd" class=" text-center w-100">
